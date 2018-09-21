@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?hu2zk5');
+  src:  url('fonts/icomoon.eot?hu2zk5#iefix') format('embedded-opentype'),
+  url('fonts/icomoon.ttf?hu2zk5') format('truetype'),
+  url('fonts/icomoon.woff?hu2zk5') format('woff'),
+  url('fonts/icomoon.svg?hu2zk5#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-download:before {
+  content: "\e900";
+}
+.icon-home3:before {
+  content: "\e902";
+}
+.icon-images:before {
+  content: "\e90e";
+}
+.icon-music:before {
+  content: "\e911";
+}
+.icon-film:before {
+  content: "\e913";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-cogs:before {
+  content: "\e995";
+}
+.icon-google-plus:before {
+  content: "\ea8b";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-rss:before {
+  content: "\ea9b";
+}
+.icon-steam2:before {
+  content: "\eaad";
+}
+.icon-appleinc:before {
+  content: "\eabe";
+}
+.icon-windows8:before {
+  content: "\eac2";
+}
+.icon-skype:before {
+  content: "\eac5";
+}
+.icon-chrome:before {
+  content: "\ead9";
+}
+.icon-firefox:before {
+  content: "\eada";
+}
+.icon-IE:before {
+  content: "\eadb";
+}
+.icon-safari:before {
+  content: "\eadd";
+}
+.icon-opera:before {
+  content: "\eade";
+}
+.icon-css3:before {
+  content: "\eae6";
+}
+.icon-html5:before {
+  content: "\e901";
+}
+.icon-github-alt:before {
+  content: "\e903";
+}
+.icon-pinterest-square:before {
+  content: "\e904";
+}
+
+body{
+  margin: 0;
+  background-color: #ECECEC;
+}
+h1{
+  text-align: center;
+  text-transform: uppercase;
+}
+.icons{
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 30px;
+  &__item{
+    display: inline-block;
+    border: 1px solid;
+    width: 300px;
+    background-color: orange;
+    box-sizing: border-box;
+    margin: 5px 2px;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px black;
+  }
+  &__icon{
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: #444444;
+    color: white;
+    font-size: 30px;
+    line-height: 50px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  &__text{
+    text-align: left;
+    height: 50px;
+    padding: 5px 0;
+    box-sizing: border-box;
+    margin-left: 60px;
+    color: white;
+  }
+  &__title{
+
+  }
+  &__link{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: all .5s ease;
+    position: relative;
+    &:after{
+      content: '';
+      width: 0;
+      height: 1px;
+      background-color: white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: all .5s ease;
+    }
+    &:hover{
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+}
